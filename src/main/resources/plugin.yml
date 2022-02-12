@@ -1,0 +1,21 @@
+name: TP
+version: 1.9.1.6
+api-version: 1.17
+depend: [Essentials]
+author: Neo8
+main: de.neo.prodtp.ProdTPMain
+commands:
+    prodtpver:
+    tpaall:
+    tpacancel:
+    tpaccept:
+    tpa:
+    tpahere:
+    tpall:
+    tp:
+    tpdeny:
+    tphere:
+    tpo:
+    tpohere:
+    tptoggle:
+    tpoffline:

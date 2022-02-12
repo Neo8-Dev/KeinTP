@@ -1,0 +1,192 @@
+
+
+#                                                                                                                                                                                                        
+#                                                                                                                                                                                                        
+#  WWWWWWWW                           WWWWWWWW iiii  lllllll lllllll kkkkkkkk                                                                                                                            
+#  W::::::W                           W::::::Wi::::i l:::::l l:::::l k::::::k                                                                                                                            
+#  W::::::W                           W::::::W iiii  l:::::l l:::::l k::::::k                                                                                                                            
+#  W::::::W                           W::::::W       l:::::l l:::::l k::::::k                                                                                                                            
+#   W:::::W           WWWWW           W:::::Wiiiiiii  l::::l  l::::l  k:::::k    kkkkkkk ooooooooooo      mmmmmmm    mmmmmmm      mmmmmmm    mmmmmmm       eeeeeeeeeeee    nnnn  nnnnnnnn                
+#    W:::::W         W:::::W         W:::::W i:::::i  l::::l  l::::l  k:::::k   k:::::koo:::::::::::oo  mm:::::::m  m:::::::mm  mm:::::::m  m:::::::mm   ee::::::::::::ee  n:::nn::::::::nn              
+#     W:::::W       W:::::::W       W:::::W   i::::i  l::::l  l::::l  k:::::k  k:::::ko:::::::::::::::om::::::::::mm::::::::::mm::::::::::mm::::::::::m e::::::eeeee:::::een::::::::::::::nn             
+#      W:::::W     W:::::::::W     W:::::W    i::::i  l::::l  l::::l  k:::::k k:::::k o:::::ooooo:::::om::::::::::::::::::::::mm::::::::::::::::::::::me::::::e     e:::::enn:::::::::::::::n            
+#       W:::::W   W:::::W:::::W   W:::::W     i::::i  l::::l  l::::l  k::::::k:::::k  o::::o     o::::om:::::mmm::::::mmm:::::mm:::::mmm::::::mmm:::::me:::::::eeeee::::::e  n:::::nnnn:::::n            
+#        W:::::W W:::::W W:::::W W:::::W      i::::i  l::::l  l::::l  k:::::::::::k   o::::o     o::::om::::m   m::::m   m::::mm::::m   m::::m   m::::me:::::::::::::::::e   n::::n    n::::n            
+#         W:::::W:::::W   W:::::W:::::W       i::::i  l::::l  l::::l  k:::::::::::k   o::::o     o::::om::::m   m::::m   m::::mm::::m   m::::m   m::::me::::::eeeeeeeeeee    n::::n    n::::n            
+#          W:::::::::W     W:::::::::W        i::::i  l::::l  l::::l  k::::::k:::::k  o::::o     o::::om::::m   m::::m   m::::mm::::m   m::::m   m::::me:::::::e             n::::n    n::::n            
+#           W:::::::W       W:::::::W        i::::::il::::::ll::::::lk::::::k k:::::k o:::::ooooo:::::om::::m   m::::m   m::::mm::::m   m::::m   m::::me::::::::e            n::::n    n::::n            
+#            W:::::W         W:::::W         i::::::il::::::ll::::::lk::::::k  k:::::ko:::::::::::::::om::::m   m::::m   m::::mm::::m   m::::m   m::::m e::::::::eeeeeeee    n::::n    n::::n            
+#             W:::W           W:::W          i::::::il::::::ll::::::lk::::::k   k:::::koo:::::::::::oo m::::m   m::::m   m::::mm::::m   m::::m   m::::m  ee:::::::::::::e    n::::n    n::::n            
+#              WWW             WWW           iiiiiiiillllllllllllllllkkkkkkkk    kkkkkkk ooooooooooo   mmmmmm   mmmmmm   mmmmmmmmmmmm   mmmmmm   mmmmmm    eeeeeeeeeeeeee    nnnnnn    nnnnnn            
+#                                                                                                                                                                                                        
+#                                                                                                                                                                                                        
+#                                                                                                                                                                                                        
+#                                                                                                                                                                                                        
+#                                                                                                                                                                                                        
+#                                                                                                                                                                                                        
+#                                                                                                                                                                                                        
+#                                                                                                                                                                                                        
+#                                            dddddddd                                                                                                                                                    
+#    iiii                                    d::::::d                                                     CCCCCCCCCCCCC                                                                                  
+#   i::::i                                   d::::::d                                                  CCC::::::::::::C                                                                                  
+#    iiii                                    d::::::d                                                CC:::::::::::::::C                                                                                  
+#                                            d:::::d                                                C:::::CCCCCCCC::::C                                                                                  
+#  iiiiiiinnnn  nnnnnnnn             ddddddddd:::::d     eeeeeeeeeeee    rrrrr   rrrrrrrrr         C:::::C       CCCCCC   ooooooooooo   nnnn  nnnnnnnn                                                   
+#  i:::::in:::nn::::::::nn         dd::::::::::::::d   ee::::::::::::ee  r::::rrr:::::::::r       C:::::C               oo:::::::::::oo n:::nn::::::::nn                                                 
+#   i::::in::::::::::::::nn       d::::::::::::::::d  e::::::eeeee:::::eer:::::::::::::::::r      C:::::C              o:::::::::::::::on::::::::::::::nn                                                
+#   i::::inn:::::::::::::::n     d:::::::ddddd:::::d e::::::e     e:::::err::::::rrrrr::::::r     C:::::C              o:::::ooooo:::::onn:::::::::::::::n ---------------                               
+#   i::::i  n:::::nnnn:::::n     d::::::d    d:::::d e:::::::eeeee::::::e r:::::r     r:::::r     C:::::C              o::::o     o::::o  n:::::nnnn:::::n -:::::::::::::-                               
+#   i::::i  n::::n    n::::n     d:::::d     d:::::d e:::::::::::::::::e  r:::::r     rrrrrrr     C:::::C              o::::o     o::::o  n::::n    n::::n ---------------                               
+#   i::::i  n::::n    n::::n     d:::::d     d:::::d e::::::eeeeeeeeeee   r:::::r                 C:::::C              o::::o     o::::o  n::::n    n::::n                                               
+#   i::::i  n::::n    n::::n     d:::::d     d:::::d e:::::::e            r:::::r                  C:::::C       CCCCCCo::::o     o::::o  n::::n    n::::n                                               
+#  i::::::i n::::n    n::::n     d::::::ddddd::::::dde::::::::e           r:::::r                   C:::::CCCCCCCC::::Co:::::ooooo:::::o  n::::n    n::::n                                               
+#  i::::::i n::::n    n::::n      d:::::::::::::::::d e::::::::eeeeeeee   r:::::r                    CC:::::::::::::::Co:::::::::::::::o  n::::n    n::::n                                               
+#  i::::::i n::::n    n::::n       d:::::::::ddd::::d  ee:::::::::::::e   r:::::r                      CCC::::::::::::C oo:::::::::::oo   n::::n    n::::n                                               
+#  iiiiiiii nnnnnn    nnnnnn        ddddddddd   ddddd    eeeeeeeeeeeeee   rrrrrrr                         CCCCCCCCCCCCC   ooooooooooo     nnnnnn    nnnnnn                                               
+#                                                                                                                                                                                                        
+#                                                                                                                                                                                                        
+#                                                                                                                                                                                                        
+#                                                                                                                                                                                                        
+#                                                                                                                                                                                                        
+#                                                                                                                                                                                                        
+#                                                                                                                                                                                                        
+#                                                                                                                                                                                                        
+#                                                                                                                                                                                                        
+#      ffffffffffffffff    iiii                                  PPPPPPPPPPPPPPPPP                                                                                                                       
+#     f::::::::::::::::f  i::::i                                 P::::::::::::::::P                                                                                                                      
+#    f::::::::::::::::::f  iiii                                  P::::::PPPPPP:::::P                                                                                                                     
+#    f::::::fffffff:::::f                                        PP:::::P     P:::::P                                                                                                                    
+#    f:::::f       ffffffiiiiiii    ggggggggg   ggggg              P::::P     P:::::Prrrrr   rrrrrrrrr      ooooooooooo                                                                                  
+#    f:::::f             i:::::i   g:::::::::ggg::::g              P::::P     P:::::Pr::::rrr:::::::::r   oo:::::::::::oo                                                                                
+#   f:::::::ffffff        i::::i  g:::::::::::::::::g              P::::PPPPPP:::::P r:::::::::::::::::r o:::::::::::::::o                                                                               
+#   f::::::::::::f        i::::i g::::::ggggg::::::gg              P:::::::::::::PP  rr::::::rrrrr::::::ro:::::ooooo:::::o ---------------                                                               
+#   f::::::::::::f        i::::i g:::::g     g:::::g               P::::PPPPPPPPP     r:::::r     r:::::ro::::o     o::::o -:::::::::::::-                                                               
+#   f:::::::ffffff        i::::i g:::::g     g:::::g               P::::P             r:::::r     rrrrrrro::::o     o::::o ---------------                                                               
+#    f:::::f              i::::i g:::::g     g:::::g               P::::P             r:::::r            o::::o     o::::o                                                                               
+#    f:::::f              i::::i g::::::g    g:::::g               P::::P             r:::::r            o::::o     o::::o                                                                               
+#   f:::::::f            i::::::ig:::::::ggggg:::::g  ,,,,,,     PP::::::PP           r:::::r            o:::::ooooo:::::o                                                                               
+#   f:::::::f            i::::::i g::::::::::::::::g  ,::::,     P::::::::P           r:::::r            o:::::::::::::::o                                                                               
+#   f:::::::f            i::::::i  gg::::::::::::::g  ,::::,     P::::::::P           r:::::r             oo:::::::::::oo                                                                                
+#   fffffffff            iiiiiiii    gggggggg::::::g  ,:::,,     PPPPPPPPPP           rrrrrrr               ooooooooooo                                                                                  
+#                                            g:::::g ,:::,                                                                                                                                               
+#                                gggggg      g:::::g ,,,,                                                                                                                                                
+#                                g:::::gg   gg:::::g                                                                                                                                                     
+#                                 g::::::ggg:::::::g                                                                                                                                                     
+#                                  gg:::::::::::::g                                                                                                                                                      
+#                                    ggg::::::ggg                                                                                                                                                        
+#                                       gggggg                                                                                                                                                           
+#                                                                                                                                                                                                        
+#              dddddddd                                                                                                                                                                                  
+#              d::::::d                  kkkkkkkk                    tttt                                                 hhhhhhh                                                     kkkkkkkk           
+#              d::::::d                  k::::::k                 ttt:::t                                                 h:::::h                                                     k::::::k           
+#              d::::::d                  k::::::k                 t:::::t                                                 h:::::h                                                     k::::::k           
+#              d:::::d                   k::::::k                 t:::::t                                                 h:::::h                                                     k::::::k           
+#      ddddddddd:::::d uuuuuu    uuuuuu   k:::::k    kkkkkkkttttttt:::::ttttttt        eeeeeeeeeeee        cccccccccccccccch::::h hhhhh           eeeeeeeeeeee        cccccccccccccccc k:::::k    kkkkkkk
+#    dd::::::::::::::d u::::u    u::::u   k:::::k   k:::::k t:::::::::::::::::t      ee::::::::::::ee    cc:::::::::::::::ch::::hh:::::hhh      ee::::::::::::ee    cc:::::::::::::::c k:::::k   k:::::k 
+#   d::::::::::::::::d u::::u    u::::u   k:::::k  k:::::k  t:::::::::::::::::t     e::::::eeeee:::::ee c:::::::::::::::::ch::::::::::::::hh   e::::::eeeee:::::ee c:::::::::::::::::c k:::::k  k:::::k  
+#  d:::::::ddddd:::::d u::::u    u::::u   k:::::k k:::::k   tttttt:::::::tttttt    e::::::e     e:::::ec:::::::cccccc:::::ch:::::::hhh::::::h e::::::e     e:::::ec:::::::cccccc:::::c k:::::k k:::::k   
+#  d::::::d    d:::::d u::::u    u::::u   k::::::k:::::k          t:::::t          e:::::::eeeee::::::ec::::::c     ccccccch::::::h   h::::::he:::::::eeeee::::::ec::::::c     ccccccc k::::::k:::::k    
+#  d:::::d     d:::::d u::::u    u::::u   k:::::::::::k           t:::::t          e:::::::::::::::::e c:::::c             h:::::h     h:::::he:::::::::::::::::e c:::::c              k:::::::::::k     
+#  d:::::d     d:::::d u::::u    u::::u   k:::::::::::k           t:::::t          e::::::eeeeeeeeeee  c:::::c             h:::::h     h:::::he::::::eeeeeeeeeee  c:::::c              k:::::::::::k     
+#  d:::::d     d:::::d u:::::uuuu:::::u   k::::::k:::::k          t:::::t    tttttte:::::::e           c::::::c     ccccccch:::::h     h:::::he:::::::e           c::::::c     ccccccc k::::::k:::::k    
+#  d::::::ddddd::::::ddu:::::::::::::::uuk::::::k k:::::k         t::::::tttt:::::te::::::::e          c:::::::cccccc:::::ch:::::h     h:::::he::::::::e          c:::::::cccccc:::::ck::::::k k:::::k   
+#   d:::::::::::::::::d u:::::::::::::::uk::::::k  k:::::k        tt::::::::::::::t e::::::::eeeeeeee   c:::::::::::::::::ch:::::h     h:::::h e::::::::eeeeeeee   c:::::::::::::::::ck::::::k  k:::::k  
+#    d:::::::::ddd::::d  uu::::::::uu:::uk::::::k   k:::::k         tt:::::::::::tt  ee:::::::::::::e    cc:::::::::::::::ch:::::h     h:::::h  ee:::::::::::::e    cc:::::::::::::::ck::::::k   k:::::k 
+#     ddddddddd   ddddd    uuuuuuuu  uuuukkkkkkkk    kkkkkkk          ttttttttttt      eeeeeeeeeeeeee      cccccccccccccccchhhhhhh     hhhhhhh    eeeeeeeeeeeeee      cccccccccccccccckkkkkkkk    kkkkkkk
+#                                                                                                                                                                                                        
+#                                                                                                                                                                                                        
+#                                                                                                                                                                                                        
+#                                                                                                                                                                                                        
+#                                                                                                                                                                                                        
+#                                                                                                                                                                                                        
+#                                                                                                                                                                                                        
+#                                                                                                                                                                                                        
+#                                                dddddddd                                                                                                                                                
+#                                                d::::::d     NNNNNNNN        NNNNNNNN                                                                                                                   
+#                                                d::::::d     N:::::::N       N::::::N                                                                                                                   
+#                                                d::::::d     N::::::::N      N::::::N                                                                                                                   
+#                                                d:::::d      N:::::::::N     N::::::N                                                                                                                   
+#  uuuuuu    uuuuuunnnn  nnnnnnnn        ddddddddd:::::d      N::::::::::N    N::::::N   ooooooooooo   nnnn  nnnnnnnn       ooooooooooo                                                                  
+#  u::::u    u::::un:::nn::::::::nn    dd::::::::::::::d      N:::::::::::N   N::::::N oo:::::::::::oo n:::nn::::::::nn   oo:::::::::::oo                                                                
+#  u::::u    u::::un::::::::::::::nn  d::::::::::::::::d      N:::::::N::::N  N::::::No:::::::::::::::on::::::::::::::nn o:::::::::::::::o                                                               
+#  u::::u    u::::unn:::::::::::::::nd:::::::ddddd:::::d      N::::::N N::::N N::::::No:::::ooooo:::::onn:::::::::::::::no:::::ooooo:::::o ---------------                                               
+#  u::::u    u::::u  n:::::nnnn:::::nd::::::d    d:::::d      N::::::N  N::::N:::::::No::::o     o::::o  n:::::nnnn:::::no::::o     o::::o -:::::::::::::-                                               
+#  u::::u    u::::u  n::::n    n::::nd:::::d     d:::::d      N::::::N   N:::::::::::No::::o     o::::o  n::::n    n::::no::::o     o::::o ---------------                                               
+#  u::::u    u::::u  n::::n    n::::nd:::::d     d:::::d      N::::::N    N::::::::::No::::o     o::::o  n::::n    n::::no::::o     o::::o                                                               
+#  u:::::uuuu:::::u  n::::n    n::::nd:::::d     d:::::d      N::::::N     N:::::::::No::::o     o::::o  n::::n    n::::no::::o     o::::o                                                               
+#  u:::::::::::::::uun::::n    n::::nd::::::ddddd::::::dd     N::::::N      N::::::::No:::::ooooo:::::o  n::::n    n::::no:::::ooooo:::::o                                                               
+#   u:::::::::::::::un::::n    n::::n d:::::::::::::::::d     N::::::N       N:::::::No:::::::::::::::o  n::::n    n::::no:::::::::::::::o                                                               
+#    uu::::::::uu:::un::::n    n::::n  d:::::::::ddd::::d     N::::::N        N::::::N oo:::::::::::oo   n::::n    n::::n oo:::::::::::oo                                                                
+#      uuuuuuuu  uuuunnnnnn    nnnnnn   ddddddddd   ddddd     NNNNNNNN         NNNNNNN   ooooooooooo     nnnnnn    nnnnnn   ooooooooooo                                                                  
+#                                                                                                                                                                                                        
+#                                                                                                                                                                                                        
+#                                                                                                                                                                                                        
+#                                                                                                                                                                                                        
+#                                                                                                                                                                                                        
+#                                                                                                                                                                                                        
+#                                                                                                                                                                                                        
+#                                                                                                                                                                                                        
+#                                                                                                                                                                                                        
+#                      iiii          tttt                                                  !!!       !!!       !!!                                                                                       
+#                     i::::i      ttt:::t                                                 !!:!!     !!:!!     !!:!!                                                                                      
+#                      iiii       t:::::t                                                 !:::!     !:::!     !:::!                                                                                      
+#                                 t:::::t                                                 !:::!     !:::!     !:::!                                                                                      
+#  nnnn  nnnnnnnn    iiiiiiittttttt:::::ttttttt      aaaaaaaaaaaaa      ssssssssss        !:::!     !:::!     !:::!                                                                                      
+#  n:::nn::::::::nn  i:::::it:::::::::::::::::t      a::::::::::::a   ss::::::::::s       !:::!     !:::!     !:::!                                                                                      
+#  n::::::::::::::nn  i::::it:::::::::::::::::t      aaaaaaaaa:::::ass:::::::::::::s      !:::!     !:::!     !:::!                                                                                      
+#  nn:::::::::::::::n i::::itttttt:::::::tttttt               a::::as::::::ssss:::::s     !:::!     !:::!     !:::!                                                                                      
+#    n:::::nnnn:::::n i::::i      t:::::t              aaaaaaa:::::a s:::::s  ssssss      !:::!     !:::!     !:::!                                                                                      
+#    n::::n    n::::n i::::i      t:::::t            aa::::::::::::a   s::::::s           !:::!     !:::!     !:::!                                                                                      
+#    n::::n    n::::n i::::i      t:::::t           a::::aaaa::::::a      s::::::s        !!:!!     !!:!!     !!:!!                                                                                      
+#    n::::n    n::::n i::::i      t:::::t    tttttta::::a    a:::::assssss   s:::::s       !!!       !!!       !!!                                                                                       
+#    n::::n    n::::ni::::::i     t::::::tttt:::::ta::::a    a:::::as:::::ssss::::::s                                                                                                                    
+#    n::::n    n::::ni::::::i     tt::::::::::::::ta:::::aaaa::::::as::::::::::::::s       !!!       !!!       !!!                                                                                       
+#    n::::n    n::::ni::::::i       tt:::::::::::tt a::::::::::aa:::as:::::::::::ss       !!:!!     !!:!!     !!:!!                                                                                      
+#    nnnnnn    nnnnnniiiiiiii         ttttttttttt    aaaaaaaaaa  aaaa sssssssssss          !!!       !!!       !!!                                                                                       
+#                                                                                                                                                                                                        
+#                                                                                                                                                                                                        
+#                                                                                                                                                                                                        
+#                                                                                                                                                                                                        
+#                                                                                                                                                                                                        
+#                                                                                                                                                                                                        
+#                                                                                                                                                                                                        
+messages:
+    prefix: 'PREFIX ->'
+    teleported: 'Telportiere...'
+    expired: 'Die Anfrage ist abgelaufen.'
+    tpa: 'Du hast eine TPA von %player% erhalten.'
+    tpahere: 'Du hast eine TPAHere von %player% erhalten.'
+    accepttpa: '[Akzeptieren]'
+    denytpa: '[Ablehnen]'
+    sent: 'Die Anfrage wurde gesendet.'
+    target_offline: 'Der angegebene Spieler ist offline.'
+    unknown_target: 'Dieser Spieler ist unbekannt.'
+    usage_tpa: 'Bitte benutze: /tpa <Spieler>'
+    usage_tpahere: 'Bitte benutze: /tpahere <Spieler>'
+    usage_tp: 'Bitte benutze: /tp <Spieler>'
+    usage_tphere: 'Bitte benutze: /tphere <Spieler>'
+    usage_tpohere: 'Bitte benutze: /tpohere <Spieler>'
+    usage_tpdeny: 'Bitte benutze: /tpdeny <Spieler>'
+    usage_tpaccept: 'Bitte benutze: /tpaccept <Spieler>'
+    usage_tpacancel: 'Bitte benutze: /tpacancel <Spieler>'
+    usage_tpoffline: 'Bitte benutze: /tpoffline <Spieler>'
+    no_perm: 'Du hast keine Berechtigung diesen Befehl zu nutzen.'
+    tp_blocked: 'Dieser Spieler nimmt keine Teleportationanfragen an.'
+    tp_not_expired: 'Du hast noch eine ausgehende TP Anfrage. Benutze /tpcancel um weitere Anfragen senden zu können.'
+    can_not_safetp: 'Es konnte keine sichere Position gefunden werden.'
+    tpdenied: 'Deine Telportationsanfrage wurde abgelehnt.'
+    tpdeny: 'Du hast diese Anfrage abgelehnt.'
+    tptoggled_on: 'Du nimmst nun Teleportanfragen an.'
+    tptoggled_off: 'Du nimmst nun keine Teleportanfragen mehr an.'
+    no_tpreq: 'Du hast keine ausstehende Anfrage von diesem Spieler.'
+    tpa_aborted: 'Die Teleportationsanfrage wurde zurückgezogen.'
+    tpa_canceled: '%player% hat die Teleportationsanfrage zurückgezogen.'
+    tpa_all_players: 'Du hast allen Spielern eine Teleportationsanfrage gesendet.'
+    tp_all_players: 'Du hast alle Spieler zu dir teleportiert.'
+    tp_all_player_ext: '(Spieler: %player%)'
+    tpa_accepted: '%player% hat deine TPA akzeptiert.'
+    tpahere_accepted: '%player% hat deine TPAHere akzeptiert.'
+    tp_not_allowed: 'Dieser Vorgang ist nicht erlaubt.'
+    LACK_GESOFFEN: 'HAST DU EIN MAßBAND GEFUTTERT?!'
+options:
+    tpa_expire: 300
