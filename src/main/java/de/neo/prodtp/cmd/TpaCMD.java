@@ -22,6 +22,7 @@ public class TpaCMD implements CommandExecutor {
 					if(t != null && t.isOnline()) {
 						if(t.getName().equals(p.getName())) {
 							p.sendMessage(ProdTPMain.getMessage("LACK_GESOFFEN"));
+							return false;
 						}
 						ProdTPPlayerManager mgr = ProdTPMain.getInstance().getProdTPPlayerManager();
 						TPARequest in = mgr.get(t.getUniqueId()).getTPARequest(p.getUniqueId());

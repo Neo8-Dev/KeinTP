@@ -22,6 +22,7 @@ public class TpacceptCMD implements CommandExecutor {
 					if(t != null && t.isOnline()) {
 						if(t.getName().equals(p.getName())) {
 							p.sendMessage(ProdTPMain.getMessage("LACK_GESOFFEN"));
+							return false;
 						}
 						TPARequest req = main.getProdTPPlayerManager().get(p.getUniqueId()).getTPARequest(t.getUniqueId());
 						if(req != null && (req.equals(main.getProdTPPlayerManager().get(t.getUniqueId()).getOutgoing()) || req.isTPAHere()) && !req.isExpired()) {

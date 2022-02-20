@@ -25,6 +25,7 @@ public class TpacancelCMD implements CommandExecutor {
 				}
 				if(t.getName().equals(p.getName())) {
 					p.sendMessage(ProdTPMain.getMessage("LACK_GESOFFEN"));
+					return false;
 				}
 				TPARequest in = main.getProdTPPlayerManager().get(t.getUniqueId()).getTPARequest(out.getReceiver());
 				if(in != null) {

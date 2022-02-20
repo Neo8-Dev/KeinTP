@@ -21,6 +21,7 @@ public class TpoHereCMD implements CommandExecutor {
 					if(t != null && t.isOnline()) {
 						if(t.getName().equals(p.getName())) {
 							p.sendMessage(ProdTPMain.getMessage("LACK_GESOFFEN"));
+							return false;
 						}
 						t.teleport(p, TeleportCause.PLUGIN);
 						t.sendMessage(ProdTPMain.getMessage("teleported"));

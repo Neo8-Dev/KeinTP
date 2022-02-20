@@ -21,6 +21,7 @@ public class TpHereCMD implements CommandExecutor {
 					if(t != null && t.isOnline()) {
 						if(t.getName().equals(p.getName())) {
 							p.sendMessage(ProdTPMain.getMessage("LACK_GESOFFEN"));
+							return false;
 						}
 						if(!ProdTPMain.getInstance().getProdTPPlayerManager().get(p.getUniqueId()).isTpBlocked()) {
 							TPUtil.safeTP(t, p);

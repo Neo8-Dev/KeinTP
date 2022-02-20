@@ -21,6 +21,7 @@ public class TpaHereCMD implements CommandExecutor {
 					if(t != null && t.isOnline()) {
 						if(t.getName().equals(p.getName())) {
 							p.sendMessage(ProdTPMain.getMessage("LACK_GESOFFEN"));
+							return false;
 						}
 						if(ProdTPMain.getInstance().getProdTPPlayerManager().get(t.getUniqueId()).getTPARequest(p.getUniqueId()) == null) {
 							TPARequest request = new TPARequest(p.getUniqueId(), t.getUniqueId(), true);
