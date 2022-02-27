@@ -1,19 +1,15 @@
 package de.neo.prodtp.cmd;
 
+import de.neo.prodtp.ProdTPMain;
+import de.neo.prodtp.util.NBTUtil;
+import de.neo.prodtp.util.TPUtil;
 import org.bukkit.Bukkit;
-import org.bukkit.Statistic;
+import org.bukkit.Location;
+import org.bukkit.OfflinePlayer;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-
-import com.earth2me.essentials.Essentials;
-import com.earth2me.essentials.User;
-
-import de.neo.prodtp.ProdTPMain;
-import de.neo.prodtp.util.TPUtil;
-
-import java.util.UUID;
 
 public class TpOfflineCMD implements CommandExecutor {
 
@@ -23,9 +19,10 @@ public class TpOfflineCMD implements CommandExecutor {
 			Player p = (Player) sender;
 			if(p.hasPermission("tp.tpoffline")) {
 				if(args.length == 1) {
-					User u = Essentials.getPlugin(Essentials.class).getOfflineUser(args[0]);
-					if(u != null) {
-						TPUtil.safeTP(p, u.getLogoutLocation());
+					OfflinePlayer t = Bukkit.getOfflinePlayer(args[0]);
+					if(t.isOnline()) {
+						Location loc = NBTUtil.getLastLocation(t.getUniqueId());
+						TPUtil.safeTP(p, loc);
 					}else {
 						p.sendMessage(ProdTPMain.getMessage("unknown_target"));
 					}
