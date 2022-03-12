@@ -20,7 +20,7 @@ public class TpOfflineCMD implements CommandExecutor {
 			if(p.hasPermission("tp.tpoffline")) {
 				if(args.length == 1) {
 					OfflinePlayer t = Bukkit.getOfflinePlayer(args[0]);
-					if(t.isOnline()) {
+					if(t.hasPlayedBefore()) {
 						Location loc = NBTUtil.getLastLocation(t.getUniqueId());
 						TPUtil.safeTP(p, loc);
 					}else {
