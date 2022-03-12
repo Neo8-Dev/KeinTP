@@ -34,7 +34,6 @@ public class TpaCMD implements CommandExecutor {
 						request.sendInvite();
 						ProdTPMain.getInstance().getProdTPPlayerManager().get(t.getUniqueId()).addTPARequest(request);
 						ProdTPMain.getInstance().getProdTPPlayerManager().get(p.getUniqueId()).setOutgoing(request);
-						p.sendMessage(ProdTPMain.getMessage("sent"));
 					}else {
 						p.sendMessage(ProdTPMain.getMessage("target_offline"));
 					}

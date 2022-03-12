@@ -103,6 +103,7 @@ public class TPARequest {
 					}
 					r.getPlayer().spigot().sendMessage(TextComponent.fromLegacyText(ProdTPMain.getMessage("tpa").replace("%player%", s.getName())));
 					r.getPlayer().spigot().sendMessage(texts.toArray(new BaseComponent[0]));
+					s.getPlayer().sendMessage(ProdTPMain.getMessage("sent"));
 				}
 			}
 		}else {

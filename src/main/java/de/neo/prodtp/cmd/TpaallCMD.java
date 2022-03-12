@@ -24,7 +24,7 @@ public class TpaallCMD implements CommandExecutor {
 					req.sendInvite();
 					ProdTPMain.getInstance().getProdTPPlayerManager().get(t.getUniqueId()).addTPARequest(req);
 				}
-				p.sendMessage(ProdTPMain.getMessage("tpa_all_players"));
+				// p.sendMessage(ProdTPMain.getMessage("tpa_all_players"));
 			}else {
 				p.sendMessage(ProdTPMain.getMessage("no_perm"));
 			}
