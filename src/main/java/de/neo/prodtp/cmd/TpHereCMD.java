@@ -24,7 +24,7 @@ public class TpHereCMD implements CommandExecutor {
 							return false;
 						}
 						if(!ProdTPMain.getInstance().getProdTPPlayerManager().get(p.getUniqueId()).isTpBlocked()) {
-							TPUtil.safeTP(t, p);
+							TPUtil.safeTP(t, p, true);
 						}else {
 							p.sendMessage(ProdTPMain.getMessage("tp_blocked"));
 						}

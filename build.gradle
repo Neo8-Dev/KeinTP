@@ -17,7 +17,7 @@ targetCompatibility = 16
 
 group = 'de.neo.prodtp'
 archivesBaseName = 'TP'
-version = '1.9.1.8'
+version = '1.9.2'
 
 repositories {
 	mavenCentral()
@@ -43,4 +43,10 @@ dependencies {
 	compileOnly 'org.spigotmc:spigot-api:1.17-R0.1-SNAPSHOT'
 	implementation 'de.tr7zw:item-nbt-api-plugin:2.6.0'
 	implementation 'de.neo.nlaf:Manager:1.0'
+}
+
+processResources {
+	filesMatching('plugin.yml') {
+		expand 'version': version
+	}
 }
