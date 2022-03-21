@@ -41,7 +41,7 @@ repositories {
 
 dependencies {
 	compileOnly 'org.spigotmc:spigot-api:1.17-R0.1-SNAPSHOT'
-	implementation 'de.tr7zw:item-nbt-api-plugin:2.6.0'
+	implementation 'de.tr7zw:item-nbt-api-plugin:2.9.2'
 	implementation 'de.neo.nlaf:Manager:1.0'
 }
 
