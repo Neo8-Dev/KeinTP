@@ -25,6 +25,7 @@ public class TpoHereCMD implements CommandExecutor {
 						}
 						t.teleport(p, TeleportCause.PLUGIN);
 						t.sendMessage(ProdTPMain.getMessage("teleported"));
+						p.sendMessage(ProdTPMain.getMessage("teleported"));
 					}else {
 						p.sendMessage(ProdTPMain.getMessage("target_offline"));
 					}

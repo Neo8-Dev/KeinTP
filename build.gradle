@@ -17,7 +17,7 @@ targetCompatibility = 16
 
 group = 'de.neo.prodtp'
 archivesBaseName = 'TP'
-version = '1.9.2'
+version = '1.9.3'
 
 repositories {
 	mavenCentral()

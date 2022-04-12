@@ -187,6 +187,8 @@ messages:
     tpa_accepted: '%player% hat deine TPA akzeptiert.'
     tpahere_accepted: '%player% hat deine TPAHere akzeptiert.'
     tp_not_allowed: 'Dieser Vorgang ist nicht erlaubt.'
+    tp_not_allowed_nether: 'Du darfst dich nicht in den Nether teleportieren.'
+    tp_not_allowed_end: 'Du darfst dich nicht in das End teleportieren.'
     LACK_GESOFFEN: 'HAST DU EIN MAßBAND GEFUTTERT?!'
 options:
     tpa_expire: 300

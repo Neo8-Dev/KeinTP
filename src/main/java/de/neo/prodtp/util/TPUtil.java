@@ -18,13 +18,13 @@ public class TPUtil {
 	public static void safeTP(Player p, Location loc, Player receiver) {
 		if(loc.getWorld().getEnvironment().equals(Environment.NETHER)) {
 			if(!p.getAdvancementProgress(Bukkit.getAdvancement(NamespacedKey.minecraft("story/enter_the_nether"))).isDone()) {
-				receiver.sendMessage(ProdTPMain.getMessage("tp_not_allowed"));
+				receiver.sendMessage(ProdTPMain.getMessage("tp_not_allowed_nether"));
 				return;
 			}
 		}
 		if(loc.getWorld().getEnvironment().equals(Environment.THE_END)) {
 			if(!p.getAdvancementProgress(Bukkit.getAdvancement(NamespacedKey.minecraft("story/enter_the_end"))).isDone()) {
-				receiver.sendMessage(ProdTPMain.getMessage("tp_not_allowed"));
+				receiver.sendMessage(ProdTPMain.getMessage("tp_not_allowed_end"));
 				return;
 			}
 		}
@@ -38,6 +38,7 @@ public class TPUtil {
 					if(!loc.getBlock().getType().isSolid() && !loc.getBlock().getType().equals(Material.LAVA)) {
 						loc.setY(i + 1);
 						p.teleport(loc, TeleportCause.PLUGIN);
+						p.sendMessage(ProdTPMain.getMessage("teleported"));
 						receiver.sendMessage(ProdTPMain.getMessage("teleported"));
 						return;
 					}
@@ -53,6 +54,7 @@ public class TPUtil {
 					if(!loc.getBlock().getType().isSolid() && !loc.getBlock().getType().equals(Material.LAVA)) {
 						loc.setY(i + 1);
 						p.teleport(loc, TeleportCause.PLUGIN);
+						p.sendMessage(ProdTPMain.getMessage("teleported"));
 						receiver.sendMessage(ProdTPMain.getMessage("teleported"));
 						return;
 					}

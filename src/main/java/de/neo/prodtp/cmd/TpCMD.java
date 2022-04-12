@@ -9,6 +9,7 @@ import org.bukkit.entity.Player;
 
 import de.neo.prodtp.ProdTPMain;
 import de.neo.prodtp.util.TPUtil;
+import org.bukkit.event.player.PlayerTeleportEvent;
 
 public class TpCMD implements CommandExecutor {
 
@@ -35,7 +36,8 @@ public class TpCMD implements CommandExecutor {
 				}else if(args.length == 3) {
 					try {
 						Location loc = new Location(p.getWorld(), Double.valueOf(args[0]), Double.valueOf(args[1]), Double.valueOf(args[2]), p.getLocation().getYaw(), p.getLocation().getPitch());
-						TPUtil.safeTP(p, loc);
+						p.teleport(loc, PlayerTeleportEvent.TeleportCause.PLUGIN);
+						p.sendMessage(ProdTPMain.getMessage("teleported"));
 					}catch(NumberFormatException e) {
 						e.printStackTrace();
 					}
