@@ -18,6 +18,10 @@ public class TpacancelCMD implements CommandExecutor {
 			if(p.hasPermission("tp.tpacancel")) {
 				ProdTPMain main = ProdTPMain.getInstance();
 				TPARequest out = main.getProdTPPlayerManager().get(p.getUniqueId()).getOutgoing();
+				if(out == null) {
+					p.sendMessage(ProdTPMain.getMessage("no_outgoing_tpa"));
+					return false;
+				}
 				Player t = Bukkit.getPlayer(out.getReceiver());
 				if(t != null && !t.isOnline()) {
 					p.sendMessage(ProdTPMain.getMessage("target_offline"));

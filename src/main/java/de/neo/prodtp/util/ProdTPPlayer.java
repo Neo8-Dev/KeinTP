@@ -17,7 +17,7 @@ public class ProdTPPlayer implements Manageable<UUID> {
 		this.uuid = uuid;
 		this.blocked = blocked;
 		this.req = new HashMap<>();
-		this.time = 0l;
+		this.time = 0L;
 	}
 	
 	public void addTPARequest(TPARequest req) {

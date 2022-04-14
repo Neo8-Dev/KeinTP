@@ -17,7 +17,7 @@ targetCompatibility = 16
 
 group = 'de.neo.prodtp'
 archivesBaseName = 'TP'
-version = '1.9.3'
+version = '1.9.4'
 
 repositories {
 	mavenCentral()
@@ -41,7 +41,7 @@ repositories {
 
 dependencies {
 	compileOnly 'org.spigotmc:spigot-api:1.17-R0.1-SNAPSHOT'
-	implementation 'de.tr7zw:item-nbt-api-plugin:2.9.2'
+	compileOnly 'de.tr7zw:item-nbt-api-plugin:2.9.2'
 	implementation 'de.neo.nlaf:Manager:1.0'
 }
 

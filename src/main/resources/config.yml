@@ -190,5 +190,6 @@ messages:
     tp_not_allowed_nether: 'Du darfst dich nicht in den Nether teleportieren.'
     tp_not_allowed_end: 'Du darfst dich nicht in das End teleportieren.'
     LACK_GESOFFEN: 'HAST DU EIN MAßBAND GEFUTTERT?!'
+    no_outgoing_tpa: 'Du hast keine ausstehende Anfrage.'
 options:
     tpa_expire: 300

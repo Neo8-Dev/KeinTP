@@ -1,5 +1,8 @@
 # TP Changelog
 
+# 1.9.4
+- Fixed NPE on tpacancel
+
 # 1.9.3
 - Removed SafeTP for /tp x y z
 - Added different messages for nether and end
