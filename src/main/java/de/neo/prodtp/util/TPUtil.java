@@ -70,7 +70,7 @@ public class TPUtil {
 	
 	public static void safeTP(Player p, Player t, boolean switchMessage) {
 		if(switchMessage) safeTP(p, t.getLocation(), t);
-		else safeTP(p, t.getLocation(), p);
+		else safeTP(t, t.getLocation(), p);
 	}
 
 	public static void safeTP(Player p, Player t) {

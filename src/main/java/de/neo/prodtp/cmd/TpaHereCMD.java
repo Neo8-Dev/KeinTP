@@ -26,6 +26,7 @@ public class TpaHereCMD implements CommandExecutor {
 						if(ProdTPMain.getInstance().getProdTPPlayerManager().get(t.getUniqueId()).getTPARequest(p.getUniqueId()) == null) {
 							TPARequest request = new TPARequest(p.getUniqueId(), t.getUniqueId(), true);
 							request.sendInvite();
+							ProdTPMain.getInstance().getProdTPPlayerManager().get(p.getUniqueId()).setOutgoing(request);
 							ProdTPMain.getInstance().getProdTPPlayerManager().get(t.getUniqueId()).addTPARequest(request);
 						}else {
 							p.sendMessage(ProdTPMain.getMessage("tp_not_expired"));

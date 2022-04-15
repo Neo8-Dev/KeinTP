@@ -1,5 +1,9 @@
 # TP Changelog
 
+# 1.9.5
+- Set outgoing request on tpahere
+- player now receives the `sent` message in both cases
+
 # 1.9.4
 - Fixed NPE on tpacancel
 

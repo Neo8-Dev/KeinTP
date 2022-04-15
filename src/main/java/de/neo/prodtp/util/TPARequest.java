@@ -77,6 +77,7 @@ public class TPARequest {
 					texts.addAll(tmp);
 					r.getPlayer().spigot().sendMessage(TextComponent.fromLegacyText(ProdTPMain.getMessage("tpahere").replace("%player%", s.getName())));
 					r.getPlayer().spigot().sendMessage(texts.toArray(new BaseComponent[0]));
+					s.getPlayer().sendMessage(ProdTPMain.getMessage("sent"));
 				}else {
 					for (BaseComponent elem : texts_arr) {
 						elem.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new Text("§aKlicke hier zum akzeptieren")));
