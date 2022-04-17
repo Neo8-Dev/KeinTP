@@ -39,7 +39,7 @@ public class TPUtil {
 						loc.setY(i + 1);
 						p.teleport(loc, TeleportCause.PLUGIN);
 						p.sendMessage(ProdTPMain.getMessage("teleported"));
-						receiver.sendMessage(ProdTPMain.getMessage("teleported"));
+						//receiver.sendMessage(ProdTPMain.getMessage("teleported"));
 						return;
 					}
 				}
@@ -55,7 +55,7 @@ public class TPUtil {
 						loc.setY(i + 1);
 						p.teleport(loc, TeleportCause.PLUGIN);
 						p.sendMessage(ProdTPMain.getMessage("teleported"));
-						receiver.sendMessage(ProdTPMain.getMessage("teleported"));
+						//receiver.sendMessage(ProdTPMain.getMessage("teleported"));
 						return;
 					}
 				}

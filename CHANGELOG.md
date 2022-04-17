@@ -1,5 +1,8 @@
 # TP Changelog
 
+# 1.9.7
+- both players no longer receive the `teleported` message
+
 # 1.9.6
 - Changed default parameters for safeTP
 
