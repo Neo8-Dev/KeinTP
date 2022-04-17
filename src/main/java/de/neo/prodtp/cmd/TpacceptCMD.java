@@ -29,6 +29,10 @@ public class TpacceptCMD implements CommandExecutor {
 							req.accept();
 							main.getProdTPPlayerManager().get(p.getUniqueId()).removeTPARequest(req);
 						}else {
+							if(req.isExpired()) {
+								p.sendMessage(ProdTPMain.getMessage("expired"));
+								return false;
+							}
 							p.sendMessage(ProdTPMain.getMessage("no_tpreq"));
 						}
 					}else {

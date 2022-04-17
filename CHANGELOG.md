@@ -1,5 +1,8 @@
 # TP Changelog
 
+# 1.9.8
+- other message on expire of TPA
+
 # 1.9.7
 - both players no longer receive the `teleported` message
 
