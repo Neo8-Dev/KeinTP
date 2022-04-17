@@ -1,5 +1,8 @@
 # TP Changelog
 
+# 1.9.6
+- Changed default parameters for safeTP
+
 # 1.9.5
 - Set outgoing request on tpahere
 - player now receives the `sent` message in both cases

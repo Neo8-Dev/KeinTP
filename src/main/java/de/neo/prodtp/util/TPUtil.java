@@ -74,6 +74,6 @@ public class TPUtil {
 	}
 
 	public static void safeTP(Player p, Player t) {
-		safeTP(p, t, false);
+		safeTP(p, t, true);
 	}
 }
