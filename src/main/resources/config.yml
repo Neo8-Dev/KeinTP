@@ -39,5 +39,7 @@ messages:
     tp_not_allowed_end: 'Du darfst dich nicht in das End teleportieren.'
     LACK_GESOFFEN: 'HAST DU EIN MAßBAND GEFUTTERT?!'
     no_outgoing_tpa: 'Du hast keine ausstehende Anfrage.'
+    on_cooldown: 'Du darfst noch keine neue Anfrage stellen.'
 options:
     tpa_expire: 300
+    tpa_cooldown: 300

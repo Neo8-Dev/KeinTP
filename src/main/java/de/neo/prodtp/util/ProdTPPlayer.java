@@ -12,12 +12,14 @@ public class ProdTPPlayer implements Manageable<UUID> {
 	private HashMap<UUID, TPARequest> req;
 	private TPARequest out;
 	private long time;
+	private HashMap<UUID, Long> cooldown;
 	
 	public ProdTPPlayer(UUID uuid, boolean blocked) {
 		this.uuid = uuid;
 		this.blocked = blocked;
 		this.req = new HashMap<>();
 		this.time = 0L;
+		this.cooldown = new HashMap<>();
 	}
 	
 	public void addTPARequest(TPARequest req) {
@@ -54,6 +56,14 @@ public class ProdTPPlayer implements Manageable<UUID> {
 	
 	public long getLastTP() {
 		return this.time;
+	}
+
+	public void setCooldown(UUID uuid, long cooldownLength) {
+		this.cooldown.put(uuid, System.currentTimeMillis() + (cooldownLength * 1000));
+	}
+
+	public boolean isOnCooldown(UUID uuid) {
+		return this.cooldown.get(uuid) <= System.currentTimeMillis();
 	}
 
 	@Override

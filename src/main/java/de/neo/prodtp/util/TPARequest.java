@@ -37,6 +37,8 @@ public class TPARequest {
 			if(s.isOnline() && r.isOnline()) {
 				s.getPlayer().sendMessage(ProdTPMain.getMessage("tpahere_accepted").replace("%player%", r.getName()));
 				TPUtil.safeTP(r.getPlayer(), s.getPlayer());
+				ProdTPPlayer tpPlayer = ProdTPMain.getInstance().getProdTPPlayerManager().get(s.getUniqueId());
+				tpPlayer.setCooldown(r.getUniqueId(), ProdTPMain.getInstance().getConfig().getInt("options.tpa_cooldown"));
 			}else if(s.isOnline()) {
 				s.getPlayer().sendMessage(ProdTPMain.getMessage("expired"));
 			}else if(r.isOnline()) {
@@ -46,6 +48,8 @@ public class TPARequest {
 			if(s.isOnline() && r.isOnline()) {
 				s.getPlayer().sendMessage(ProdTPMain.getMessage("tpa_accepted").replace("%player%", r.getName()));
 				TPUtil.safeTP(s.getPlayer(), r.getPlayer());
+				ProdTPPlayer tpPlayer = ProdTPMain.getInstance().getProdTPPlayerManager().get(s.getUniqueId());
+				tpPlayer.setCooldown(r.getUniqueId(), ProdTPMain.getInstance().getConfig().getInt("options.tpa_cooldown"));
 			}else if(s.isOnline()) {
 				s.getPlayer().sendMessage(ProdTPMain.getMessage("expired"));
 			}else if(r.isOnline()) {
@@ -63,14 +67,14 @@ public class TPARequest {
 				ArrayList<BaseComponent> texts = new ArrayList<>();
 				if(this.tpahere) {
 					for (BaseComponent elem : texts_arr) {
-						elem.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new Text("§aKlicke hier zum akzeptieren")));
+						elem.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new Text("Â§aKlicke hier zum akzeptieren")));
 						elem.setClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/tpaccept " + s.getName()));
 						texts.add(elem);
 					}
 					BaseComponent[] tmp_arr = TextComponent.fromLegacyText(ProdTPMain.getInstance().getConfig().getString("messages.denytpa"));
 					ArrayList<BaseComponent> tmp = new ArrayList<BaseComponent>();
 					for (BaseComponent elem : tmp_arr) {
-						elem.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new Text("§cKlicke hier zum ablehnen")));
+						elem.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new Text("Â§cKlicke hier zum ablehnen")));
 						elem.setClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/tpdeny " + s.getName()));
 						tmp.add(elem);
 					}
@@ -80,14 +84,14 @@ public class TPARequest {
 					s.getPlayer().sendMessage(ProdTPMain.getMessage("sent"));
 				}else {
 					for (BaseComponent elem : texts_arr) {
-						elem.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new Text("§aKlicke hier zum akzeptieren")));
+						elem.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new Text("Â§aKlicke hier zum akzeptieren")));
 						elem.setClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/tpaccept " + s.getName()));
 						texts.add(elem);
 					}
 					BaseComponent[] tmp_arr = TextComponent.fromLegacyText(ProdTPMain.getInstance().getConfig().getString("messages.denytpa"));
 					ArrayList<BaseComponent> tmp = new ArrayList<BaseComponent>();
 					for (BaseComponent elem : tmp_arr) {
-						elem.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new Text("§cKlicke hier zum ablehnen")));
+						elem.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new Text("Â§cKlicke hier zum ablehnen")));
 						elem.setClickEvent(new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/tpdeny " + s.getName()));
 						tmp.add(elem);
 					}

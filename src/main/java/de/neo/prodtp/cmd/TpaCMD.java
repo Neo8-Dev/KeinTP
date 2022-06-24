@@ -1,5 +1,6 @@
 package de.neo.prodtp.cmd;
 
+import de.neo.prodtp.util.ProdTPPlayer;
 import de.neo.prodtp.util.ProdTPPlayerManager;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
@@ -20,20 +21,26 @@ public class TpaCMD implements CommandExecutor {
 				if(args.length == 1) {
 					Player t = Bukkit.getPlayer(args[0]);
 					if(t != null && t.isOnline()) {
-						if(t.getName().equals(p.getName())) {
-							p.sendMessage(ProdTPMain.getMessage("LACK_GESOFFEN"));
-							return false;
+						ProdTPPlayerManager pMan = ProdTPMain.getInstance().getProdTPPlayerManager();
+						ProdTPPlayer tpP = pMan.get(p.getUniqueId());
+						if(tpP.isOnCooldown(t.getUniqueId())) {
+							if(t.getName().equals(p.getName())) {
+								p.sendMessage(ProdTPMain.getMessage("LACK_GESOFFEN"));
+								return false;
+							}
+							ProdTPPlayerManager mgr = ProdTPMain.getInstance().getProdTPPlayerManager();
+							TPARequest in = mgr.get(t.getUniqueId()).getTPARequest(p.getUniqueId());
+							if(in != null) {
+								mgr.get(t.getUniqueId()).removeTPARequest(in);
+								mgr.get(p.getUniqueId()).setOutgoing(null);
+							}
+							TPARequest request = new TPARequest(p.getUniqueId(), t.getUniqueId(), false);
+							request.sendInvite();
+							ProdTPMain.getInstance().getProdTPPlayerManager().get(t.getUniqueId()).addTPARequest(request);
+							ProdTPMain.getInstance().getProdTPPlayerManager().get(p.getUniqueId()).setOutgoing(request);
+						}else {
+							p.sendMessage(ProdTPMain.getMessage("on_cooldown"));
 						}
-						ProdTPPlayerManager mgr = ProdTPMain.getInstance().getProdTPPlayerManager();
-						TPARequest in = mgr.get(t.getUniqueId()).getTPARequest(p.getUniqueId());
-						if(in != null) {
-							mgr.get(t.getUniqueId()).removeTPARequest(in);
-							mgr.get(p.getUniqueId()).setOutgoing(null);
-						}
-						TPARequest request = new TPARequest(p.getUniqueId(), t.getUniqueId(), false);
-						request.sendInvite();
-						ProdTPMain.getInstance().getProdTPPlayerManager().get(t.getUniqueId()).addTPARequest(request);
-						ProdTPMain.getInstance().getProdTPPlayerManager().get(p.getUniqueId()).setOutgoing(request);
 					}else {
 						p.sendMessage(ProdTPMain.getMessage("target_offline"));
 					}
