@@ -43,3 +43,4 @@ messages:
 options:
     tpa_expire: 300
     tpa_cooldown: 300
+    tpa_sent_cooldown: 10

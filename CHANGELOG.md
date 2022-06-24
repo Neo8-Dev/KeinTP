@@ -1,5 +1,8 @@
 # TP Changelog
 
+# 1.10.0
+- tpa sent and accept cooldown
+
 # 1.9.8
 - other message on expire of TPA
 

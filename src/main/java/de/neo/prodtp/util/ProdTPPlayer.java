@@ -13,6 +13,7 @@ public class ProdTPPlayer implements Manageable<UUID> {
 	private TPARequest out;
 	private long time;
 	private HashMap<UUID, Long> cooldown;
+	private long tpaTime;
 	
 	public ProdTPPlayer(UUID uuid, boolean blocked) {
 		this.uuid = uuid;
@@ -64,6 +65,14 @@ public class ProdTPPlayer implements Manageable<UUID> {
 
 	public boolean isOnCooldown(UUID uuid) {
 		return this.cooldown.get(uuid) <= System.currentTimeMillis();
+	}
+
+	public void setTpaTime(long time) {
+		this.tpaTime = time;
+	}
+
+	public long getTpaTime() {
+		return this.tpaTime;
 	}
 
 	@Override

@@ -11,6 +11,8 @@ import net.md_5.bungee.api.chat.ClickEvent;
 import net.md_5.bungee.api.chat.HoverEvent;
 import net.md_5.bungee.api.chat.TextComponent;
 import net.md_5.bungee.api.chat.hover.content.Text;
+import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.entity.Player;
 
 public class TPARequest {
 	
@@ -63,6 +65,15 @@ public class TPARequest {
 			OfflinePlayer r = Bukkit.getOfflinePlayer(this.receiver);
 			OfflinePlayer s = Bukkit.getOfflinePlayer(this.sender);
 			if(r.isOnline() && s.isOnline()) {
+				FileConfiguration config = ProdTPMain.getInstance().getConfig();
+				ProdTPPlayer tpPlayer = ProdTPMain.getInstance().getProdTPPlayerManager().get(s.getUniqueId());
+				if(tpPlayer.getTpaTime() <= System.currentTimeMillis()) {
+					Player p = (Player) s.getPlayer();
+					p.sendMessage(ProdTPMain.getMessage("on_cooldown"));
+					return;
+				}
+				tpPlayer.setTpaTime(System.currentTimeMillis() + (config.getInt("options.tpa_sent_cooldown") * 1000L));
+
 				BaseComponent[] texts_arr = TextComponent.fromLegacyText(ProdTPMain.getInstance().getConfig().getString("messages.accepttpa"));
 				ArrayList<BaseComponent> texts = new ArrayList<>();
 				if(this.tpahere) {
