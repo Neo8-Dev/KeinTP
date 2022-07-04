@@ -64,7 +64,7 @@ public class ProdTPPlayer implements Manageable<UUID> {
 	}
 
 	public boolean isOnCooldown(UUID uuid) {
-		return this.cooldown.getOrDefault(uuid, 0L) <= System.currentTimeMillis();
+		return this.cooldown.getOrDefault(uuid, 0L) >= System.currentTimeMillis();
 	}
 
 	public void setTpaTime(long time) {

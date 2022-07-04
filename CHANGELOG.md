@@ -1,5 +1,9 @@
 # TP Changelog
 
+# 1.10.2
+- Refactoring
+- Fixed cooldown logic
+
 # 1.10.0
 - tpa sent and accept cooldown
 
