@@ -2,7 +2,6 @@ name: TP
 version: 1.10.2
 api-version: 1.17
 depend:
-    - Essentials
     - NBTAPI
 author: Neo8
 main: de.neo.prodtp.ProdTPMain
